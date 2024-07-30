@@ -1,0 +1,62 @@
+.Advantages {
+    width: 100%;
+    height: 333px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+    &-row {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &-title {
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 120%;
+        color: $title-color;
+        cursor: pointer;
+        margin-bottom: 19px;
+        margin-top: 86px;
+    }
+
+    &-cards {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-card {
+        width: 480px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 60px;
+
+        &-title {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 125%;
+            color: $title-color;
+            cursor: pointer;
+            margin-bottom: 16px;
+        }
+
+        &-subtitle {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 180%;
+            color: $subtitle-color;
+            width: 70%;
+        }
+    }
+}

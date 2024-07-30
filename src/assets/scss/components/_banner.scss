@@ -1,0 +1,71 @@
+.Banner {
+    width: 100%;
+    height: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+
+    &-row {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-title {
+            font-family: $font-family;
+            font-weight: 700;
+            font-size: 44px;
+            color: $title-color;
+        }
+
+        &-subtitle {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 180%;
+            color: $subtitle-color;
+            margin-top: 40px;
+        }
+
+        &-btn {
+            border-radius: 30px;
+            width: 215px;
+            height: 55px;
+            background-color: $main-color;
+            margin-top: 50px;
+            font-family: $font-family;
+            font-weight: 700;
+            font-size: 19px;
+            text-align: center;
+            color: #f6f6f6;
+            @include trn();
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+
+    &-right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
